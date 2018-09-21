@@ -31,7 +31,7 @@ SOFTWARE.
 
 const path = require('path');
 const argv = require('yargs')
-  .usage ('font2jscad.js -f font.ttf/font.woff')
+  .usage('usage: font2jscad.js -f font.ttf/font.woff')
   .option("font",{ alias: "f", descibtion: "ttf/woff filename"})
   .option("out", { alias: "o", description: `name outputfile, 
  default it is the same name as the input filename with the extension changed to .jscad` })
@@ -39,7 +39,7 @@ const argv = require('yargs')
 default will be "lowercasefontname_ttf_data" (or lowercasefontname_woff_data)`})
   .demandOption("font")
   .help(false)
-  .version("1.0.0")
+  .version(require("./package.json").version)
   .argv;
 
 const mkdirpSync = function (dirPath) {

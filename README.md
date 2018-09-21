@@ -1,5 +1,8 @@
 # font2jscad
 Converts truetype fonts or woff fonts to jscad files. These files can than be included in OpenJSCad.
+This is a temporal solution, to include fonts for @ojsc/opentype.jscad. When OpenJSCad V2 is available this package becomes abolete.
+
+To be clear: The generated `myfont.jscad` must be used with @ojsc/opentype.jscad.
 
 # Usage
 
